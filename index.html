@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>BI tour</title>
+<link href="./img/favicon.png" rel="icon" sizes="32x32" type="image/png"/>
+<link href="./img/favicon.png" rel="icon" sizes="16x16" type="image/png"/>
+<link href="./img/favicon.png" rel="apple-touch-icon" sizes="180x180"/>
+<link href="./css/style.css" rel="stylesheet"/>
+</head>
+<body>
+<header class="header">
+<div class="header__main">
+<a class="header__logo" href="#">
+<img alt="logo" class="header__logo-img" src="./img/logo.webp"/>
+<span class="header__logo-text">
+					Travel <br/>agency
+				</span>
+</a>
+<button aria-label="Открыть меню" class="header__burger" data-i18n-aria-label="aria_open_menu">
+<span></span>
+</button>
+<nav class="header__nav">
+<ul class="header__nav-list">
+<li><a class="header__nav-link header__nav-link-main" data-i18n="nav_home" href="#">Главная</a></li>
+<li><a class="header__nav-link" data-i18n="nav_pick" href="#" id="openTourModal">Подобрать тур</a></li>
+<li><a class="header__nav-link" data-i18n="nav_tours" href="#popular">Туры</a></li>
+<li><a class="header__nav-link" data-i18n="nav_about" href="#about">О нас</a></li>
+<li><a class="header__nav-link" data-i18n="nav_address" href="#map">Адрес</a></li>
+<li><a class="header__nav-link" data-i18n="nav_contacts" href="#footer">Контакты</a></li>
+</ul>
+</nav>
+
+<div aria-label="Language switcher" class="lang">
+<button aria-expanded="false" aria-haspopup="listbox" class="lang__current" type="button">RU ▾</button>
+<ul class="lang__list" role="listbox">
+<li data-lang="ru" role="option" tabindex="0">RU</li>
+<li data-lang="uz" role="option" tabindex="0">UZ</li>
+<li data-lang="en" role="option" tabindex="0">ENG</li>
+</ul>
+</div>
+<a class="header__call-btn" href="tel:+998123456789">+998 (12) 345 67 89</a>
+</div>
+<div class="header__banner">
+<div class="header__banner-logo">
+<img alt="logo" class="header__banner__logo-img" src="./img/logo.webp"/>
+<span class="header__banner__logo-text" data-i18n="banner_title">
+					Весь мир ближе,<br/>чем кажется...
+				</span>
+</div>
+<span class="header__banner-offer" data-i18n="banner_offer">
+				Авиабилеты по всему миру<br/>Пакетные туры: Азия | Европа <br/> Круизы
+			</span>
+</div>
+<a class="header__mouse-ico" href="#popular">
+<svg enable-background="new 0 0 50 50" fill="#000000" height="800px" id="Layer_1" version="1.1" viewbox="0 0 50 50" width="800px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<path d="M34.36,31.301v-12c0-5.514-4.486-10-10-10s-10,4.486-10,10v12c0,5.514,4.486,10,10,10S34.36,36.814,34.36,31.301z
+	 M16.36,31.301v-12c0-4.411,3.589-8,8-8s8,3.589,8,8v12c0,4.411-3.589,8-8,8S16.36,35.712,16.36,31.301z"></path>
+<path d="M26.982,20.487v-3c0-1.379-1.121-2.5-2.5-2.5s-2.5,1.121-2.5,2.5v3c0,1.379,1.121,2.5,2.5,2.5S26.982,21.866,26.982,20.487z
+	 M23.982,20.487v-3c0-0.275,0.225-0.5,0.5-0.5s0.5,0.225,0.5,0.5v3c0,0.275-0.225,0.5-0.5,0.5S23.982,20.763,23.982,20.487z"></path>
+</svg>
+</a>
+</header>
+<main class="main">
+<section class="carousel">
+<h2 class="carousel-title sections-title" data-i18n="popular_title" id="popular">ПОПУЛЯРНЫЕ НАПРАВЛЕНИЯ</h2>
+<button class="nav prev">‹</button>
+<div class="carousel__viewport">
+<div class="carousel__track">
+<div class="card">
+<img alt="" class="card__img" src="./img/carousel/turkey.jpg"/>
+<div class="card__text">
+<h3 class="card__text-title" data-i18n="card1_title">Турция</h3>
+<p class="card__text-desc" data-i18n="card1_desc">Солнце, море и комфорт “всё включено”
+								Идеальный выбор для семейного отдыха и романтических поездок. Тёплое море, отличные отели, богатая кухня
+								и высокий уровень сервиса по доступной цене.</p>
+</div>
+</div>
+<div class="card">
+<img alt="" class="card__img" src="./img/carousel/uae.jpg"/>
+<div class="card__text">
+<h3 class="card__text-title" data-i18n="card2_title">ОАЭ</h3>
+<p class="card__text-desc" data-i18n="card2_desc">Роскошь, технологии и восточная сказка
+								Современные мегаполисы, пустынные сафари, пляжный отдых и шопинг мирового уровня. Отлично подойдёт для
+								тех, кто хочет впечатлений и комфорта.</p>
+</div>
+</div>
+<div class="card">
+<img alt="" class="card__img" src="./img/carousel/egpt.jpg"/>
+<div class="card__text">
+<h3 class="card__text-title" data-i18n="card3_title">Египет</h3>
+<p class="card__text-desc" data-i18n="card3_desc">История цивилизаций и Красное море
+								Пирамиды, древние храмы и лучшие коралловые рифы. Прекрасный вариант для отдыха круглый год с насыщенной
+								экскурсионной программой.</p>
+</div>
+</div>
+<div class="card">
+<img alt="" class="card__img" src="./img/carousel/maldives.webp"/>
+<div class="card__text">
+<h3 class="card__text-title" data-i18n="card4_title">Мальдивы</h3>
+<p class="card__text-desc" data-i18n="card4_desc">Уединение, океан и абсолютный релакс
+								Белоснежные пляжи, бирюзовая вода и виллы над океаном. Идеальное направление для медового месяца и
+								спокойного отдыха вдали от суеты.</p>
+</div>
+</div>
+<div class="card">
+<img alt="" class="card__img" src="./img/carousel/Thailand.webp"/>
+<div class="card__text">
+<h3 class="card__text-title" data-i18n="card5_title">Таиланд</h3>
+<p class="card__text-desc" data-i18n="card5_desc">Экзотика, природа и улыбки
+								Тропические острова, вкусная кухня, массажи и насыщенная ночная жизнь. Подходит как для активного, так и
+								для расслабленного отдыха.</p>
+</div>
+</div>
+<div class="card">
+<img alt="" class="card__img" src="./img/carousel/italy.jpg"/>
+<div class="card__text">
+<h3 class="card__text-title" data-i18n="card6_title">Италия</h3>
+<p class="card__text-desc" data-i18n="card6_desc">Культура, гастрономия и романтика
+								Исторические города, море, мода и изысканная кухня. Отличный выбор для тех, кто хочет совместить отдых и
+								культурные впечатления.</p>
+</div>
+</div>
+</div>
+</div>
+<button class="nav next">›</button>
+</section>
+<section class="about" id="about">
+<div class="about__main">
+<h2 class="about__main-title sections-title" data-i18n="about_title">Почему BI TOUR</h2>
+<p class="about__main-desc" data-i18n="about_lead">
+					Мы не просто продаём туры. Мы берём на себя заботу о вашем отдыхе, чтобы вы спокойно наслаждались поездкой от
+					первого шага до возвращения домой.
+				</p>
+</div>
+<div class="about__paper">
+<div class="about__cart-wrapper">
+<div class="about__cart">
+<img alt="icon" class="about__cart-img" src="./img/about/compass.png"/>
+<h3 class="about__cart-title" data-i18n="about_card1_title">Индивидуальный подход</h3>
+<p class="about__cart-desc" data-i18n="about_card1_desc">Подбираем тур именно под вас, а не «как у всех»</p>
+</div>
+<div class="about__cart">
+<img alt="icon" class="about__cart-img" src="./img/about/shield.png"/>
+<h3 class="about__cart-title" data-i18n="about_card2_title">Официальная компания</h3>
+<p class="about__cart-desc" data-i18n="about_card2_desc">Работаем прозрачно и только по договору</p>
+</div>
+<div class="about__cart">
+<img alt="icon" class="about__cart-img" src="./img/about/bill.png"/>
+<h3 class="about__cart-title" data-i18n="about_card3_title">Лучшие цены</h3>
+<p class="about__cart-desc" data-i18n="about_card3_desc">Прямые партнёры и всегда актуальные предложения</p>
+</div>
+<div class="about__cart">
+<img alt="icon" class="about__cart-img" src="./img/about/support.png"/>
+<h3 class="about__cart-title" data-i18n="about_card4_title">Поддержка 24/7</h3>
+<p class="about__cart-desc" data-i18n="about_card4_desc">Мы на связи до, во время и после поездки</p>
+</div>
+<div class="about__cart">
+<img alt="icon" class="about__cart-img" src="./img/about/vip.png"/>
+<h3 class="about__cart-title" data-i18n="about_card5_title">Полное сопровождение</h3>
+<p class="about__cart-desc" data-i18n="about_card5_desc">От первой заявки до вашего возвращения домой</p>
+</div>
+<div class="about__cart">
+<img alt="icon" class="about__cart-img" src="./img/about/map.png"/>
+<h3 class="about__cart-title" data-i18n="about_card6_title">Проверенные направления</h3>
+<p class="about__cart-desc" data-i18n="about_card6_desc">Рекомендуем только те маршруты, в которых уверены сами</p>
+</div>
+<div class="about__cart">
+<img alt="icon" class="about__cart-img" src="./img/about/hourglass.png"/>
+<h3 class="about__cart-title" data-i18n="about_card7_title">Экономия времени</h3>
+<p class="about__cart-desc" data-i18n="about_card7_desc">Быстро, удобно и без лишних вопросов</p>
+</div>
+<div class="about__cart about__hidden">
+<img alt="icon" class="about__cart-img" src="./img/about/yes.png"/>
+<h3 class="about__cart-title" data-i18n="about_card8_title">Спокойствие в поездке</h3>
+<p class="about__cart-desc" data-i18n="about_card8_desc">Мы всё проверяем заранее, чтобы вы просто отдыхали</p>
+</div>
+<div class="about__cart">
+<img alt="icon" class="about__cart-img" src="./img/about/speech-bubble.png"/>
+<h3 class="about__cart-title" data-i18n="about_card9_title">Живое общение</h3>
+<p class="about__cart-desc" data-i18n="about_card9_desc">Всегда объясним, подскажем и поможем</p>
+</div>
+</div>
+<div class="about__text">
+<p class="about__text-desc"><span class="about__text-main">BI TOUR</span><span data-i18n="about_bottom"> — это спокойствие, уверенность и комфорт в каждом путешествии.
+						Мы рядом на всех этапах, чтобы ваш отдых был именно таким, каким вы его представляете.</span></p>
+</div>
+</div>
+</section>
+<section class="map" id="map">
+<h2 class="map__title sections-title" data-i18n="map_title">Наш Адрес</h2>
+<div class="map__source">
+<iframe allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d529.8276024298146!2d69.27989663886122!3d41.30543664187883!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDHCsDE4JzE5LjgiTiA2OcKwMTYnNDcuMiJF!5e0!3m2!1sru!2s!4v1770395257681!5m2!1sru!2s"></iframe>
+</div>
+</section>
+</main>
+<footer class="footer" id="footer">
+<div class="footer__logo container">
+<div class="footer__wrapper">
+<img alt="" class="footer__logo-img" src="./img/logo.webp"/>
+<span class="footer__logo-text">
+					Travel <br/>agency
+				</span>
+</div>
+<a class="footer-btn" href="#">↑</a>
+</div>
+<div class="footer__contects container">
+<span class="adress" data-i18n="footer_address">Узбекистан, г. Ташкент<br/>Проспект Амира темура, 15<br/>Ориэнтир: TIFT
+				university<br/></span>
+<div class="footer__contacts-call">
+<a href="tel:+998123456789">+998 (12) 345 67 89</a>
+<a href="tel:+998123456789">+998 (12) 345 67 89</a>
+<a href="tel:+998123456789">+998 (12) 345 67 89</a>
+<a href="tel:+998123456789">+998 (12) 345 67 89</a>
+</div>
+<div class="foooter__cntact-scial">
+<a class="footer__social-telegram social" href="#"><img alt="" src="./img/social/telegram.png"/></a>
+<a class="footer__social-instagram social" href="#"><img alt="" src="./img/social/instagram.png"/></a>
+<a class="footer__social-facebook social" href="#"><img alt="" src="./img/social/facebook.png"/></a>
+</div>
+</div>
+</footer>
+<div aria-hidden="true" class="modal" id="tourModal">
+<div class="modal__overlay" data-close=""></div>
+<div aria-labelledby="tourModalTitle" aria-modal="true" class="modal__content" role="dialog">
+<button aria-label="Закрыть" class="modal__close" data-close="" data-i18n-aria-label="aria_close" type="button">×</button>
+<h3 class="modal__title" data-i18n="modal_title" id="tourModalTitle">Подобрать тур</h3>
+<p class="modal__subtitle" data-i18n="modal_subtitle">Оставьте контакты, мы свяжемся с вами</p>
+<form class="modal__form" id="tourForm">
+<label class="modal__label"><span data-i18n="modal_name_label">Имя</span>
+<input class="modal__input" data-i18n-placeholder="modal_name_ph" minlength="2" name="name" placeholder="Ваше имя" required="" type="text"/></label>
+<label class="modal__label"><span data-i18n="modal_phone_label">Телефон</span>
+<input class="modal__input" data-i18n-placeholder="modal_phone_ph" name="phone" placeholder="+998 90 123 45 67" required="" type="tel"/></label>
+<button class="modal__submit" data-i18n="modal_submit" type="submit">Отправить</button>
+<div aria-live="polite" class="modal__status" id="tourStatus"></div>
+</form>
+</div>
+</div>
+<script defer="" src="./js/script.js"></script>
+</body>
+</html>
